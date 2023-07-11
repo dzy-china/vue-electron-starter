@@ -1,30 +1,35 @@
 {
-  "productName":"api伴侣",
+  "productName":"您的app名称",
   "copyright":"Shanghai Huisheng Internet Technology Co., Ltd.",
   "directories": {
     "output": "build"
   },
+  "extraResources":[
+    {
+      "from":"./public/images/",
+      "to": "images"
+    }
+  ],
   "nsis": {
     "oneClick": false,
-    "allowElevation": true,
     "allowToChangeInstallationDirectory": true,
-    "installerIcon": "./public/images/apiLogo.ico",
-    "uninstallerIcon": "./public/images/apiLogo.ico",
-    "installerHeaderIcon": "./public/images/apiLogo.ico",
+    "installerIcon": "./public/images/logo.ico",
+    "uninstallerIcon": "./public/images/logo.ico",
+    "installerHeaderIcon": "./public/images/logo.ico",
     "createDesktopShortcut": true,
     "createStartMenuShortcut": true,
-    "shortcutName": "api伴侣"
+    "shortcutName": "您的app名称"
   },
 
   "win": {
-    "icon": "./public/images/apiLogo.ico"
+    "icon": "./public/images/logo.ico"
   },
 
   "linux": {
-    "icon": "./public/images/apiLogo.ico"
+    "icon": "./public/images/logo.ico"
   },
 
   "mac": {
-    "icon": "./public/images/apiLogo.ico"
+    "icon": "./public/images/logo.ico"
   }
 }
