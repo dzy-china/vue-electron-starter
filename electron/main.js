@@ -8,7 +8,7 @@ const createWindow = async () => {
         width: 1100,
         height: 800,
         // 窗口图标
-        icon: "../public/images/logo.ico", 
+        icon: path.resolve(app.isPackaged?"resources/":"public/", "images/logo.ico"),
         //渲染进程预设
         webPreferences: {
             // nodeIntegration: true, // 开启在渲染进程中融入node
